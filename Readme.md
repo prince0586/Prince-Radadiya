@@ -27,6 +27,10 @@ pip install -r requirements.txt
 
 ### 3. Configuration
 Create a .env file in the root directory and add your API key:
+OR
+during uploading zip repo file on share.streamlit.io you will see "advanced settings" there you can put api key.
+OR
+after deployed app successfully on streamlit.io you can go to manage app -> settings -> secrets there you can put api key.
 
 Code snippet
 
@@ -41,3 +45,4 @@ Bash
 streamlit run app.py
 
 App Testing Link : https://prince-radadiya-aqwyzzmbzh24wtvvmmijti.streamlit.app/
+
