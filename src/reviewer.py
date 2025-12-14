@@ -17,5 +17,20 @@ class Reviewer:
         
         Output: A concise set of critique notes (max 3 bullet points).
         """
-        response = self.model.generate_content(prompt)
-        return response.text.strip()
+        
+        try:
+            # Generate content
+            response = self.model.generate_content(prompt)
+            
+            # Check if response is valid before accessing .text
+            if response.parts:
+                return response.text.strip()
+            else:
+                # If blocked by safety filters, return a manual warning
+                return "⚠️ The Reviewer detected potential sensitivities and withheld the critique. Proceeding with available data."
+                
+        except ValueError:
+            # This catches the specific "ValueError" from your screenshot
+            return "⚠️ Reviewer output was blocked by safety settings. (Standard automated check)."
+        except Exception as e:
+            return f"⚠️ Reviewer Error: {str(e)}"
