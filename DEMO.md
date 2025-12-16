@@ -1,11 +1,10 @@
 📺 **Hosted Public Video Link 
 https://youtu.be/oNTXgLjaCTU
 
-PLEASE DO NOT UPLOAD RAW VIDOE FILES. These submissions will not be reviewed.
 
 ### Timestamps
 
-- **00:00–00:30** — Introduction & setup  
-- **00:30–01:30** — User input → Planning step  
-- **01:30–02:30** — Tool calls & memory retrieval  
-- **02:30–03:30** — Final output & edge-case handling
+- **00:00–02:43** — Introduction & setup  
+- **02:45–03:21** — User input → Planning step  
+- **03:22–03:41** — Tool calls & memory retrieval  
+- **03:42–04:51** — Final output & edge-case handling
